@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Oxy_Boots" customModuleProvider="target">
+            <connections>
+                <outlet property="onboardingCollectionView" destination="Hoz-kq-WaC" id="3eL-fh-lO1"/>
+                <outlet property="pageControl" destination="yRY-hp-QcH" id="dNF-cG-Phe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-d1-Rjl">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpr-pK-6ED">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="639"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-kq-WaC">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="639"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2PP-Ks-69T">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Hoz-kq-WaC" firstAttribute="top" secondItem="zpr-pK-6ED" secondAttribute="top" id="4bc-7f-djI"/>
+                                <constraint firstAttribute="trailing" secondItem="Hoz-kq-WaC" secondAttribute="trailing" id="9O3-UC-1vr"/>
+                                <constraint firstAttribute="bottom" secondItem="Hoz-kq-WaC" secondAttribute="bottom" id="bcv-dz-RbD"/>
+                                <constraint firstItem="Hoz-kq-WaC" firstAttribute="leading" secondItem="zpr-pK-6ED" secondAttribute="leading" id="m13-8s-3PB"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="863-aO-Sfb">
+                            <rect key="frame" x="0.0" y="699" width="393" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ylk-UE-m98">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRY-hp-QcH" customClass="PageControl" customModule="Oxy_Boots" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="jnI-Iy-dC9"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-hl-7Sb">
+                                            <rect key="frame" x="228" y="0.0" width="165" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="165" id="cWT-pe-7Mq"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ylk-UE-m98" firstAttribute="top" secondItem="863-aO-Sfb" secondAttribute="top" id="0ZV-X1-7MD"/>
+                                <constraint firstItem="ylk-UE-m98" firstAttribute="leading" secondItem="863-aO-Sfb" secondAttribute="leading" id="Jg9-2t-3GV"/>
+                                <constraint firstAttribute="bottom" secondItem="ylk-UE-m98" secondAttribute="bottom" id="SIJ-Ga-f6W"/>
+                                <constraint firstAttribute="trailing" secondItem="ylk-UE-m98" secondAttribute="trailing" id="djm-Do-wm7"/>
+                                <constraint firstAttribute="height" constant="60" id="koy-Sm-et2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ohf-d1-Rjl" secondAttribute="trailing" id="04j-s8-eIv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ohf-d1-Rjl" secondAttribute="bottom" id="Pje-ec-5My"/>
+                <constraint firstItem="ohf-d1-Rjl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZgZ-bv-FhC"/>
+                <constraint firstItem="ohf-d1-Rjl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aAx-E2-kB7"/>
+            </constraints>
+            <point key="canvasLocation" x="102" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
