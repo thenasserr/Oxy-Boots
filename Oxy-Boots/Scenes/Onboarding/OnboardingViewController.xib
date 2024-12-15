@@ -10,8 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Oxy_Boots" customModuleProvider="target">
             <connections>
-                <outlet property="onboardingCollectionView" destination="Hoz-kq-WaC" id="3eL-fh-lO1"/>
-                <outlet property="pageControl" destination="yRY-hp-QcH" id="dNF-cG-Phe"/>
+                <outlet property="containerStackView" destination="ohf-d1-Rjl" id="dkw-ov-pZW"/>
+                <outlet property="nextButton" destination="Y01-hl-7Sb" id="Kus-iY-ooX"/>
+                <outlet property="onboardingCollectionView" destination="Hoz-kq-WaC" id="ENZ-NZ-75Z"/>
+                <outlet property="pageControl" destination="yRY-hp-QcH" id="Zcx-gY-3EB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,9 +29,9 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="639"/>
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-kq-WaC">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="639"/>
+                                    <rect key="frame" x="0.0" y="150" width="393" height="489"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2PP-Ks-69T">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2PP-Ks-69T">
                                         <size key="itemSize" width="128" height="128"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -39,7 +41,7 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="Hoz-kq-WaC" firstAttribute="top" secondItem="zpr-pK-6ED" secondAttribute="top" id="4bc-7f-djI"/>
+                                <constraint firstItem="Hoz-kq-WaC" firstAttribute="top" secondItem="zpr-pK-6ED" secondAttribute="top" constant="150" id="4bc-7f-djI"/>
                                 <constraint firstAttribute="trailing" secondItem="Hoz-kq-WaC" secondAttribute="trailing" id="9O3-UC-1vr"/>
                                 <constraint firstAttribute="bottom" secondItem="Hoz-kq-WaC" secondAttribute="bottom" id="bcv-dz-RbD"/>
                                 <constraint firstItem="Hoz-kq-WaC" firstAttribute="leading" secondItem="zpr-pK-6ED" secondAttribute="leading" id="m13-8s-3PB"/>
@@ -58,7 +60,7 @@
                                                 <constraint firstAttribute="width" constant="70" id="jnI-Iy-dC9"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-hl-7Sb">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-hl-7Sb" customClass="MainButton" customModule="Oxy_Boots" customModuleProvider="target">
                                             <rect key="frame" x="228" y="0.0" width="165" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="165" id="cWT-pe-7Mq"/>

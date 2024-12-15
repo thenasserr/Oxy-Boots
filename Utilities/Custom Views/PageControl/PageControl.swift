@@ -34,7 +34,7 @@ class PageControl: UIView {
     }
     
     @IBInspectable var pageTintColor: UIColor? = .gray
-    @IBInspectable var currentPageTintColor: UIColor? = .black
+    @IBInspectable var currentPageTintColor: UIColor? = .mainButton
     @IBInspectable var spacing: CGFloat = 4 {
         didSet {
             pagesStackView.spacing = spacing

@@ -44,6 +44,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D6D1BD212D0D933200373FA2 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 				D6D1BC922D0D843500373FA2 /* Oxy-Boots */,
 				D6D1BCE42D0D84BB00373FA2 /* Utilities */,
 				D6D1BCEC2D0D84BB00373FA2 /* Resources */,
+				D6D1BD212D0D933200373FA2 /* Extensions */,
 				D6D1BC912D0D843500373FA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +103,7 @@
 				D6D1BC922D0D843500373FA2 /* Oxy-Boots */,
 				D6D1BCE42D0D84BB00373FA2 /* Utilities */,
 				D6D1BCEC2D0D84BB00373FA2 /* Resources */,
+				D6D1BD212D0D933200373FA2 /* Extensions */,
 			);
 			name = "Oxy-Boots";
 			packageProductDependencies = (
