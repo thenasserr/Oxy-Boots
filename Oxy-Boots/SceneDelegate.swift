@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = ( scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         let viewModel = OnboardingViewModel()
-        window.rootViewController = OnboardingViewController(viewModel: viewModel)
+        window.rootViewController = RecoveryPasswordViewController()
         self.window = window
         window.makeKeyAndVisible()
     }

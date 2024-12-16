@@ -69,8 +69,6 @@ extension UIFont {
         switch weight {
         case .regular: return "AirbnbCereal_W_Bk"
         case .medium: return "AirbnbCereal_W_Md"
-//        case .semibold: return "Poppins-SemiBold"
-//        case .bold: return "Poppins-Bold"
         default: return "AirbnbCereal_W_Bk"
         }
     }

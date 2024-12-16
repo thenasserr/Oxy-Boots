@@ -5,3 +5,22 @@
   Created by Ibrahim Nasser Ibrahim on 14/12/2024.
   
 */
+
+"signin.titleLabel" = "Hello Again!";
+"signin.subtitleLabel" = "Welcome Back You’ve Been Missed!";
+"email.textField" = "Email Address";
+"password.textField" = "Password";
+"recovery.button.title" = "Recovery Password";
+"signin.button.title" = "Sign In";
+"noAccount.title" = "Don’t have an account?";
+"signup.titleLabel" = "Sign Up for free";
+//
+"signup.titleLabel" = "Create Account";
+"signup.subtitleLabel" = "Let’s Create Account Together";
+"name.textField" = "Your Name";
+"signup.button.title" = "Sign Up";
+"haveAccount.label" = "Already have an account?";
+//
+"recovery.titleLabel" = "Recovery Password";
+"recovery.subtitleLabel" = "Please Enter Your Email Address To Recieve a Verification Code";
+"continue.button.title" = "Continue";

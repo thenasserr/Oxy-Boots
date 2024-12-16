@@ -1,25 +1,26 @@
 //
-//  SigninViewController.swift
+//  SignupViewController.swift
 //  Oxy-Boots
 //
-//  Created by Ibrahim Nasser Ibrahim on 15/12/2024.
+//  Created by Ibrahim Nasser Ibrahim on 16/12/2024.
 //
 
 import UIKit
 
-class SigninViewController: UIViewController {
+class SignupViewController: UIViewController {
 
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var passwordTextField: TextField!
+    @IBOutlet weak var nameTextField: TextField!
     @IBOutlet weak var emailTextField: TextField!
-    @IBOutlet weak var recoveryPasswordButton: UIButton!
-    @IBOutlet weak var sigininButton: MainButton!
-    @IBOutlet weak var noAccountLabel: UILabel!
-    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var passwordTextField: TextField!
+    @IBOutlet weak var signupButton: MainButton!
+    @IBOutlet weak var haveAccountLabel: UILabel!
+    @IBOutlet weak var signinButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         configureUI()
     }
     
@@ -31,9 +32,9 @@ class SigninViewController: UIViewController {
     }
     
     private func configureTitlesUI() {
-        titleLabel.text = L10n.Signin.titleLabel
-        subtitleLabel.text = L10n.Signin.subtitleLabel
-        noAccountLabel.text = L10n.NoAccount.title
+        titleLabel.text = L10n.Signup.titleLabel
+        subtitleLabel.text = L10n.Signup.subtitleLabel
+        haveAccountLabel.text = L10n.HaveAccount.label
         
         titleLabel.font = .custom(size: 32, weight: .bold)
         subtitleLabel.font = .custom(size: 16, weight: .bold)
@@ -44,13 +45,12 @@ class SigninViewController: UIViewController {
     private func configureTextFieldsUI() {
         emailTextField.title = L10n.Email.textField
         passwordTextField.title = L10n.Password.textField
+        nameTextField.title = L10n.Name.textField
     }
     
     private func configureButtonsUI() {
-        recoveryPasswordButton.setTitle(L10n.Recovery.Button.title, for: .normal)
-        recoveryPasswordButton.tintColor = .secondary
-        sigininButton.title = L10n.Signin.Button.title
-        signupButton.setTitle(L10n.Signup.titleLabel, for: .normal)
-        signupButton.tintColor = .secondary
+        signupButton.setTitle(L10n.Signup.Button.title, for: .normal)
+        signinButton.tintColor = .secondary
+        signinButton.setTitle(L10n.Signin.Button.title, for: .normal)
     }
 }
